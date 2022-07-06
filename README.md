@@ -44,12 +44,6 @@ HOST=
 PORT=
 
 
-* Перейти в папку _random_api_json_:
-
-```
-cd random_api_json
-```
-
 * Запустить сервер:
 
 ```
