@@ -9,9 +9,13 @@ services:
       - POSTGRES_DB=
       - POSTGRES_USER=
       - POSTGRES_PASSWORD=
+    ports:
+      - 15432:5432
   web:
     build: .
-    command: bash -c "python3 manage.py migrate && python3 manage.py runserver"
+    command: bash -c "python manage.py migrate && python manage.py runserver"
+    ports:
+      - 8000:8000
     volumes:
       - .:/random_api_json
     expose:
