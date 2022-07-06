@@ -25,6 +25,7 @@ pip install -r requirements.txt
 * Создать файлик .env в корне проекта и в него положить некоторые переменные:
 
 ##### Обязательные: 
+
 SECRET_KEY=
 
 DEBUG_VALUE=
@@ -33,16 +34,15 @@ DJANGO_DEV=
 
 ##### Для базы данных postgreSQL:
 
-NAME=
+DB_NAME=
 
-USER=
+DB_USER=
 
-PASSWORD=
+USER_PASSWORD=
 
-HOST=
+DB_HOST=
 
-PORT=
-
+DB_PORT=
 
 * Запустить сервер:
 
