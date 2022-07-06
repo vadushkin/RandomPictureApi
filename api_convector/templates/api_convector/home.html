@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Request?</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'js/style.js' %}">
+    <link rel="shortcut icon" type="image/png" href="{% static 'img/ghost.ico' %}"/>
+</head>
+<body>
+<form action="" method="POST">
+    {% csrf_token %}
+    <div id="container">
+        <div class="chat-bubble" id="ghost-bubble"></div>
+        <input id="ghost-input" type="text" name="text_for_photo" placeholder="Type a message"/>
+        <div class="ghost">
+            <div class="ghost__face">
+                <div class="ghost__eyes">
+                    <div class="ghost__eyes-l"></div>
+                    <div class="ghost__eyes-r"></div>
+                </div>
+                <div class="ghost__mouth"></div>
+            </div>
+            <div class="ghost__torso"></div>
+            <div class="ghost__hands">
+                <div class="ghost__hands-l"></div>
+                <div class="ghost__hands-r"></div>
+            </div>
+            <div class="ghost__legs"></div>
+        </div>
+    </div>
+</form>
+</body>
+</html>
